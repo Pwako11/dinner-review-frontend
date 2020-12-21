@@ -6,7 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Dinner Project</h1>
+    <h1>Dinner Review</h1>
+
+    <p>
+        Welcome this site offers foodies and entertainment seekers a forum to review hundreds of dinning and entertainement locals. Search for your next dinning experience and write your review for the next visitor.
+        
+    </p>
+        
+    <h3>Write your Review</h3>
+
+    <div id="container">
+        <form name= "review" id= "review-form">
+            <label>Review title: </label>
+            <input type="text" name= "title" id="title" size= "30" /><br>
+            <label>Review content: </label>
+            <input type="text-area" name= "content" id="content" size= "60" /><br>
+            <br>
+            <label>Review rating: </label>
+            <input type="number_field" name="rating" id="rating" max=5 min=0 />
+            <br>
+            <input type="submit">
+        </form>
+        <ul id="review-list"></ul>
+    </div>
     <script src="./src/index.js"></script>
 </body>
 </html>
